@@ -4,8 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class MexerKirby : MonoBehaviour
 {
-    float velFrente = 0.05f;
-    float velTras = -0.05f;
+    float velFrente = 0.01f;
+    float velTras = -0.01f;
     float velPulo = 2f;
     void Start()
     {
