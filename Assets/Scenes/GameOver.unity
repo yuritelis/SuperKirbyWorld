@@ -267,6 +267,7 @@ GameObject:
   - component: {fileID: 59855056}
   - component: {fileID: 59855055}
   - component: {fileID: 59855054}
+  - component: {fileID: 59855057}
   m_Layer: 5
   m_Name: menu
   m_TagString: botMenu
@@ -376,6 +377,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59855052}
   m_CullTransparentMesh: 1
+--- !u!114 &59855057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59855052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd0a0c6e3426bc04eaf1051a0ba9b6bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &103344333
 GameObject:
   m_ObjectHideFlags: 0
@@ -1045,6 +1058,7 @@ GameObject:
   - component: {fileID: 1959126101}
   - component: {fileID: 1959126100}
   - component: {fileID: 1959126099}
+  - component: {fileID: 1959126102}
   m_Layer: 5
   m_Name: jogardenovo
   m_TagString: botPlay
@@ -1154,6 +1168,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1959126097}
   m_CullTransparentMesh: 1
+--- !u!114 &1959126102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959126097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd0a0c6e3426bc04eaf1051a0ba9b6bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2031708948
 GameObject:
   m_ObjectHideFlags: 0

@@ -29,12 +29,20 @@ public class MexerKirby : MonoBehaviour
 
         Vector3 direcao = Vector3.zero;
         transform.position += direcao;
-        Collider2D collision = Physics2D.OverlapCircle(transform.position, 0.1f, 64);
+        Collider2D collision = Physics2D.OverlapCircle(transform.position, 0.1f);
         if (collision != null)
         {
             transform.position -= direcao;
+            if (collision.CompareTag("colisor"))
+            {
+                SceneManager.LoadScene("GameOver");
+            }
         }
-        else if (collision != null & GameObject.Find("colisao"))
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("colisor"))
         {
             SceneManager.LoadScene("GameOver");
         }
