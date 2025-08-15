@@ -17,6 +17,13 @@ public class TrocarCenas : MonoBehaviour
                 SceneManager.LoadScene("Level");
             }
         }
+        if (GameObject.FindGameObjectWithTag("botMenu"))
+        {
+            if (Input.GetKey(KeyCode.Mouse0))
+            {
+                SceneManager.LoadScene("MainMenu");
+            }
+        }
         if (GameObject.FindGameObjectWithTag("botQuit"))
         {
             if(Input.GetKey(KeyCode.Mouse0))

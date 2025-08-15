@@ -1,11 +1,12 @@
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public class MexerKirby : MonoBehaviour
 {
-    float velFrente = 1f;
-    float velTras = -1f;
-    float velPulo = 1f;
+    float velFrente = 0.05f;
+    float velTras = -0.05f;
+    float velPulo = 2f;
     void Start()
     {
         
@@ -21,9 +22,21 @@ public class MexerKirby : MonoBehaviour
         {
             transform.position += new Vector3(velTras, 0, 0);
         }
-        if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow))
         {
             transform.position += new Vector3(0, velPulo, 0);
+        }
+
+        Vector3 direcao = Vector3.zero;
+        transform.position += direcao;
+        Collider2D collision = Physics2D.OverlapCircle(transform.position, 0.1f, 64);
+        if (collision != null)
+        {
+            transform.position -= direcao;
+        }
+        else if (collision != null & GameObject.Find("colisao"))
+        {
+            SceneManager.LoadScene("GameOver");
         }
     }
 }

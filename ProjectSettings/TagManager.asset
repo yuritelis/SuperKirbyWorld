@@ -6,11 +6,14 @@ TagManager:
   tags:
   - botPlay
   - botQuit
+  - kirby
+  - colisor
+  - botMenu
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - personagem
   - Water
   - UI
   - 
